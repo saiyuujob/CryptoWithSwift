@@ -1,9 +1,9 @@
 # CryptoWithSwift
 Wrapped CommonCrypto(CommonCrypto/CommonCrypto.h) with swift
-. Encryption algorithm: AES
-. Encryption mode: CBC
-. Padding method: PKCS7Padding
-. Key length: 256
+- Encryption algorithm: AES
+- Encryption mode: CBC
+- Padding method: PKCS7Padding
+- Key length: 256
 
 ## Installation
 To install CryptoWithSwift, add it as a submodule to your project
