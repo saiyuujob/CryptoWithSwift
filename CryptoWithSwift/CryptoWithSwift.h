@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 //! Project version number for CryptoWithSwift.
 FOUNDATION_EXPORT double CryptoWithSwiftVersionNumber;
 
