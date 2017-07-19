@@ -406,7 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.CryptoWithSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}$(PRODUCT)/CommonCrypto";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)/CommonCrypto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -427,7 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.CryptoWithSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}$(PRODUCT)/CommonCrypto";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)/CommonCrypto";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
