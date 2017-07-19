@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6AEEA0F71F1DCEA5004916B9 /* CryptoWithSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AEEA0ED1F1DCEA5004916B9 /* CryptoWithSwift.framework */; };
 		6AEEA0FC1F1DCEA5004916B9 /* CryptoWithSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEEA0FB1F1DCEA5004916B9 /* CryptoWithSwiftTests.swift */; };
-		6AEEA0FE1F1DCEA5004916B9 /* CryptoWithSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AEEA0F01F1DCEA5004916B9 /* CryptoWithSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AEEA19E1F1DE207004916B9 /* CryptoWithSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEEA19D1F1DE207004916B9 /* CryptoWithSwift.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,14 +45,13 @@
 
 /* Begin PBXFileReference section */
 		6AEEA0ED1F1DCEA5004916B9 /* CryptoWithSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoWithSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AEEA0F01F1DCEA5004916B9 /* CryptoWithSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoWithSwift.h; sourceTree = "<group>"; };
 		6AEEA0F11F1DCEA5004916B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AEEA0F61F1DCEA5004916B9 /* CryptoWithSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWithSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEEA0FB1F1DCEA5004916B9 /* CryptoWithSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWithSwiftTests.swift; sourceTree = "<group>"; };
 		6AEEA0FD1F1DCEA5004916B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AEEA18E1F1DDE2C004916B9 /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Demo.xcodeproj; path = Demo/Demo.xcodeproj; sourceTree = "<group>"; };
 		6AEEA19D1F1DE207004916B9 /* CryptoWithSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoWithSwift.swift; sourceTree = "<group>"; };
-		6AEEA1A31F1DE49E004916B9 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6AEEA1EA1F1EEE03004916B9 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +76,10 @@
 		6AEEA0E31F1DCEA5004916B9 = {
 			isa = PBXGroup;
 			children = (
-				6AEEA1A21F1DE49E004916B9 /* CommonCrypto */,
-				6AEEA18E1F1DDE2C004916B9 /* Demo.xcodeproj */,
 				6AEEA0EF1F1DCEA5004916B9 /* CryptoWithSwift */,
 				6AEEA0FA1F1DCEA5004916B9 /* CryptoWithSwiftTests */,
 				6AEEA0EE1F1DCEA5004916B9 /* Products */,
+				6AEEA18E1F1DDE2C004916B9 /* Demo.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +95,7 @@
 		6AEEA0EF1F1DCEA5004916B9 /* CryptoWithSwift */ = {
 			isa = PBXGroup;
 			children = (
-				6AEEA0F01F1DCEA5004916B9 /* CryptoWithSwift.h */,
+				6AEEA1E91F1EEE03004916B9 /* CommonCrypto */,
 				6AEEA0F11F1DCEA5004916B9 /* Info.plist */,
 				6AEEA19D1F1DE207004916B9 /* CryptoWithSwift.swift */,
 			);
@@ -124,10 +121,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6AEEA1A21F1DE49E004916B9 /* CommonCrypto */ = {
+		6AEEA1E91F1EEE03004916B9 /* CommonCrypto */ = {
 			isa = PBXGroup;
 			children = (
-				6AEEA1A31F1DE49E004916B9 /* module.modulemap */,
+				6AEEA1EA1F1EEE03004916B9 /* module.modulemap */,
 			);
 			path = CommonCrypto;
 			sourceTree = "<group>";
@@ -139,7 +136,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AEEA0FE1F1DCEA5004916B9 /* CryptoWithSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.CryptoWithSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}/CommonCrypto";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}$(PRODUCT)/CommonCrypto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -431,7 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.CryptoWithSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}/CommonCrypto";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}$(PRODUCT)/CommonCrypto";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
